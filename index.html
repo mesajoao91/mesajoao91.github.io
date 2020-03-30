@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Dice</title>
+  <link rel="icon" type="imagen/svg" href="./src/assets/simon.svg">
+  <link rel="stylesheet" href="./src/assets/styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Caveat+Brush&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="title">¡Simon Dice!</div>
+  </header>
+  <div class="container">
+    <div class="container-dashboard">
+      <div class="dashboard">
+        <ul>
+          <li><b>Jugador:</b>
+            <span id="name">Anónimo</span>
+          </li>
+          <li><b>Nivel:</b>
+            <span id="level">--</span>
+          </li>
+          <li><b>Tiempo:</b>
+            <span id="time">--</span><span> s</span>
+          </li>
+          <li><b>Velocidad:</b>
+            <span id="speed">--</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-gameboard">
+      <div class="gameboard">
+        <div id="celeste" class="color celeste left" data-color="celeste"></div>
+        <div id="violeta" class="color violeta right" data-color="violeta"></div>
+        <div id="naranja" class="color naranja left" data-color="naranja"></div>
+        <div id="verde" class="color verde right" data-color="verde"></div>
+      </div>
+      <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">¡Empezar a jugar!</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="./src/index.js"></script>
+</body>
+</html>
